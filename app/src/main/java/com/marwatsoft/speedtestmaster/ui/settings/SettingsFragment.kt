@@ -15,7 +15,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-import com.google.android.gms.ads.LoadAdError
+//import com.google.android.gms.ads.LoadAdError
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.marwatsoft.speedtestmaster.BuildConfig
 import com.marwatsoft.speedtestmaster.R
@@ -27,7 +27,7 @@ import com.marwatsoft.speedtestmaster.helpers.SettingsHelper
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
-import pk.farimarwat.modernadmob.AdmobView
+//import pk.farimarwat.modernadmob.AdmobView
 import timber.log.Timber
 import javax.inject.Inject
 
@@ -235,33 +235,33 @@ class SettingsFragment : Fragment() {
     }
 
     fun loadBannerAd() {
-        binding.myads
-            .loadAd(mContext, BuildConfig.ADMOB_NATIVE_ADD,
-                object : AdmobView.ModernAdmobListener {
-                    override fun onAdClicked() {
-
-                    }
-
-                    override fun onAdClosed() {
-
-                    }
-
-                    override fun onAdFailedToLoad(error: LoadAdError) {
-                        Timber.e("Ad error: ${error.message}")
-                    }
-
-                    override fun onAdImpression() {
-
-                    }
-
-                    override fun onAdLoaded() {
-                        Timber.e("Add Loaded")
-                    }
-
-                    override fun onAdOpened() {
-
-                    }
-
-                })
+//        binding.myads
+//            .loadAd(mContext, BuildConfig.ADMOB_NATIVE_ADD,
+//                object : AdmobView.ModernAdmobListener {
+//                    override fun onAdClicked() {
+//
+//                    }
+//
+//                    override fun onAdClosed() {
+//
+//                    }
+//
+//                    override fun onAdFailedToLoad(error: LoadAdError) {
+//                        Timber.e("Ad error: ${error.message}")
+//                    }
+//
+//                    override fun onAdImpression() {
+//
+//                    }
+//
+//                    override fun onAdLoaded() {
+//                        Timber.e("Add Loaded")
+//                    }
+//
+//                    override fun onAdOpened() {
+//
+//                    }
+//
+//                })
     }
 }

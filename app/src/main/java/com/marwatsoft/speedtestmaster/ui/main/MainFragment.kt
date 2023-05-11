@@ -30,7 +30,7 @@ import com.daimajia.androidanimations.library.Techniques
 import com.daimajia.androidanimations.library.YoYo
 import com.dinuscxj.progressbar.CircleProgressBar
 import com.farimarwat.supergaugeview.SuperGaugeView
-import com.google.android.gms.ads.LoadAdError
+//import com.google.android.gms.ads.LoadAdError
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.marwatsoft.speedtestmaster.R
@@ -45,7 +45,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import pk.farimarwat.modernadmob.AdmobView
+//import pk.farimarwat.modernadmob.AdmobView
 import pk.farimarwat.speedtest.models.*
 import timber.log.Timber
 import javax.inject.Inject

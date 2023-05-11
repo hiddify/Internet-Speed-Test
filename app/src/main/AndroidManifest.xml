@@ -15,12 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SpeedTestMaster"
         tools:targetApi="31">
-        <meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="${ADMOB_API_KEY}" />
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="${GOOGLEMAP_API_KEY}" />
+
 
         <activity
             android:name=".FullscreenActivity"

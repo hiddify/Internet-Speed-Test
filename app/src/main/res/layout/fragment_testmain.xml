@@ -285,21 +285,21 @@
                 android:drawablePadding="8dp"
                 />
         </LinearLayout>
-        <pk.farimarwat.modernadmob.AdmobView
-            android:id="@+id/myads"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="8dp"
-            app:av_HeadlineFontFamily="@font/poppins"
-            app:av_HeadlineColor="@color/teal_200"
-            app:av_adtype="AD_TYPE_MEDIUM_MINI"
-            app:av_backgroundBody="@drawable/bg_adbody"
-            app:av_BodyTextFontFamily="@font/poppins"
-            app:av_StarRatingColor="@color/yellowPrimary"
-            app:av_actionButtonColor="@color/colorCircularProgressBarBackground"
-            />
+<!--        <pk.farimarwat.modernadmob.AdmobView-->
+<!--            android:id="@+id/myads"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            app:av_HeadlineFontFamily="@font/poppins"-->
+<!--            app:av_HeadlineColor="@color/teal_200"-->
+<!--            app:av_adtype="AD_TYPE_MEDIUM_MINI"-->
+<!--            app:av_backgroundBody="@drawable/bg_adbody"-->
+<!--            app:av_BodyTextFontFamily="@font/poppins"-->
+<!--            app:av_StarRatingColor="@color/yellowPrimary"-->
+<!--            app:av_actionButtonColor="@color/colorCircularProgressBarBackground"-->
+<!--            />-->
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

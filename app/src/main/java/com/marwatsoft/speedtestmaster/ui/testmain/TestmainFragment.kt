@@ -24,10 +24,10 @@ import com.github.mikephil.charting.data.Entry
 import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.LoadAdError
-import com.google.android.gms.ads.interstitial.InterstitialAd
-import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
+//import com.google.android.gms.ads.AdRequest
+//import com.google.android.gms.ads.LoadAdError
+//import com.google.android.gms.ads.interstitial.InterstitialAd
+//import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.marwatsoft.speedtestmaster.BuildConfig
 import com.marwatsoft.speedtestmaster.R
@@ -40,7 +40,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import pk.farimarwat.modernadmob.AdmobView
+//import pk.farimarwat.modernadmob.AdmobView
 import pk.farimarwat.speedtest.models.*
 import timber.log.Timber
 import java.util.*
@@ -429,57 +429,57 @@ class TestmainFragment : Fragment() {
     }
 
     fun loadBannerAd() {
-        binding.myads
-            .loadAd(mContext, BuildConfig.ADMOB_NATIVE_ADD,
-                object : AdmobView.ModernAdmobListener {
-                    override fun onAdClicked() {
-
-                    }
-
-                    override fun onAdClosed() {
-
-                    }
-
-                    override fun onAdFailedToLoad(error: LoadAdError) {
-                        Timber.e("Ad error: ${error.message}")
-                    }
-
-                    override fun onAdImpression() {
-
-                    }
-
-                    override fun onAdLoaded() {
-                        Timber.e("Add Loaded")
-                    }
-
-                    override fun onAdOpened() {
-
-                    }
-
-                })
+//        binding.myads
+//            .loadAd(mContext, BuildConfig.ADMOB_NATIVE_ADD,
+//                object : AdmobView.ModernAdmobListener {
+//                    override fun onAdClicked() {
+//
+//                    }
+//
+//                    override fun onAdClosed() {
+//
+//                    }
+//
+//                    override fun onAdFailedToLoad(error: LoadAdError) {
+//                        Timber.e("Ad error: ${error.message}")
+//                    }
+//
+//                    override fun onAdImpression() {
+//
+//                    }
+//
+//                    override fun onAdLoaded() {
+//                        Timber.e("Add Loaded")
+//                    }
+//
+//                    override fun onAdOpened() {
+//
+//                    }
+//
+//                })
     }
 
-    var mInterstitial: InterstitialAd? = null
+//    var mInterstitial: InterstitialAd? = null
     fun loadInterstitial(context: Context) {
-        val adRequest = AdRequest.Builder().build()
-        InterstitialAd.load(
-            context,
-            BuildConfig.ADMOB_INTERSTITIAL_ADD,
-            adRequest,
-            object : InterstitialAdLoadCallback() {
-                override fun onAdFailedToLoad(adError: LoadAdError) {
-                    Timber.e(adError?.toString())
-                    mInterstitial = null
-                }
-
-                override fun onAdLoaded(interstitialAd: InterstitialAd) {
-                    Timber.e("Interstitial ad loaded")
-                    mInterstitial = interstitialAd
-                }
-            })
+//        val adRequest = AdRequest.Builder().build()
+//        InterstitialAd.load(
+//            context,
+//            BuildConfig.ADMOB_INTERSTITIAL_ADD,
+//            adRequest,
+//            object : InterstitialAdLoadCallback() {
+//                override fun onAdFailedToLoad(adError: LoadAdError) {
+//                    Timber.e(adError?.toString())
+//                    mInterstitial = null
+//                }
+//
+//                override fun onAdLoaded(interstitialAd: InterstitialAd) {
+//                    Timber.e("Interstitial ad loaded")
+//                    mInterstitial = interstitialAd
+//                }
+//            })
     }
     fun showInterstitial(){
-        mInterstitial?.show(requireActivity())
+//        mInterstitial?.show(requireActivity())
     }
 
     fun shareDetails(body:String){

@@ -13,10 +13,10 @@ import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.LoadAdError
-import com.google.android.gms.ads.interstitial.InterstitialAd
-import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
+//import com.google.android.gms.ads.AdRequest
+//import com.google.android.gms.ads.LoadAdError
+//import com.google.android.gms.ads.interstitial.InterstitialAd
+//import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.marwatsoft.speedtestmaster.BuildConfig
 import com.marwatsoft.speedtestmaster.R
@@ -89,26 +89,26 @@ class HistoryFragment : Fragment() {
         }
     }
 
-    var mInterstitial: InterstitialAd? = null
+//    var mInterstitial: InterstitialAd? = null
     fun loadInterstitial(context: Context) {
-        val adRequest = AdRequest.Builder().build()
-        InterstitialAd.load(
-            context,
-            BuildConfig.ADMOB_INTERSTITIAL_ADD,
-            adRequest,
-            object : InterstitialAdLoadCallback() {
-                override fun onAdFailedToLoad(adError: LoadAdError) {
-                    Timber.e(adError?.toString())
-                    mInterstitial = null
-                }
-
-                override fun onAdLoaded(interstitialAd: InterstitialAd) {
-                    Timber.e("Interstitial ad loaded")
-                    mInterstitial = interstitialAd
-                }
-            })
+//        val adRequest = AdRequest.Builder().build()
+//        InterstitialAd.load(
+//            context,
+//            BuildConfig.ADMOB_INTERSTITIAL_ADD,
+//            adRequest,
+//            object : InterstitialAdLoadCallback() {
+//                override fun onAdFailedToLoad(adError: LoadAdError) {
+//                    Timber.e(adError?.toString())
+//                    mInterstitial = null
+//                }
+//
+//                override fun onAdLoaded(interstitialAd: InterstitialAd) {
+//                    Timber.e("Interstitial ad loaded")
+//                    mInterstitial = interstitialAd
+//                }
+//            })
     }
     fun showInterstitial(){
-        mInterstitial?.show(requireActivity())
+//        mInterstitial?.show(requireActivity())
     }
 }
